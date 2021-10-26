@@ -77,7 +77,12 @@
             "value": "testuser"
         },
         "adminPassword": {
-            "value": null
+           "reference": {
+           "keyVault": {
+          "id": "/subscriptions/65911ece-b772-4e16-ab25-fc95982846dc/resourceGroups/group3-rg/providers/Microsoft.KeyVault/vaults/group3key"
+           },
+          "secretName": "RootSecret"
+           }
         },
         "patchMode": {
             "value": "AutomaticByOS"
